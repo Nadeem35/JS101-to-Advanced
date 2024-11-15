@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    function chkMags() {
+      var magList = "";
+      var ind = 0;
+      for (ind = 0; ind < magForm.mag.length; ind++) {
+        if (magForm.mag[ind].checked) {
+          magList += magForm.mag[ind].value + "\n";
+        }
+      }
+      if (magList == "") {
+        alert("You didn't select any Magazine");
+      } else {
+        alert("You have selected the following Magazines: \n" + magList);
+      }
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+
+  <form name="magForm" onSubmit="return chkMags();">
+    MAGAZINES: <br />
+    <input type="checkbox" name="mag" value="National Geographic" /> National
+    Geographic <br /><br />
+    <input type="checkbox" name="mag" value="Time" /> Time <br /><br />
+    <input type="checkbox" name="mag" value="Outlook" /> Outlook <br /><br />
+    <input type="submit" value="CHECK MAGAZINES" />
+  </form>
+
+  <hr />
+</body>
+
+</html>

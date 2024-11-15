@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <script type="text/javascript">
+      function copy() {
+        var src = copyForm.source.value;
+        copyForm.dest.value = src;
+        return false;
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <form name="copyForm" onSubmit="return copy();">
+      Source: <input type="text" name="source" /> <br />
+      <br />
+      Destination: <input type="text" name="dest" /> <br />
+      <br />
+      <input type="submit" value="COPY DATA" />
+    </form>
+    <hr />
+    
+  </body>
+</html>

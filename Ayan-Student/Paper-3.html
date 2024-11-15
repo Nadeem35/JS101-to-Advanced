@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    function chkGender() {
+
+      var gen = "0";
+      var ind = 0;
+      for (ind = 0; ind < genForm.gender.length; ind++) {
+        if (genForm.gender[ind].checked) {
+          gen = genForm.gender[ind].value;
+          break;
+        }
+      }
+      if (gen == "0") {
+        alert("Please select a gender");
+      } else {
+        alert("You have selected the gender option " + gen);
+      }
+      return false;
+
+    }
+  </script>
+</head>
+
+<body>
+
+  <form name="genForm" onSubmit="return chkGender();">
+    GENDER: <br />
+    <input type="radio" name="gender" value="Male" /> Male <br />
+    <input type="radio" name="gender" value="Female" /> Female <br />
+    <input type="radio" name="gender" value="Other" /> Other <br />
+    <input type="submit" value="CHECK GENDER" />
+  </form>
+  <hr />
+
+</body>
+
+</html>

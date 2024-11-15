@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Basics</title>
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <h1>JavaScript Basic Lectures</h1>
+
+    <button onclick="Clickfun()">Click me</button>
+
+    <button onclick="myFunction()">Alert</button>
+
+    <script>
+      // const Clickfun = () => {
+      //   alert("Your form is submitted");
+      // }
+
+      // document.write("<h1>I am Nadeem</h1>")
+
+      // ----------------- JS-Data Types ---------------------
+      /*
+       1. let
+       2. var
+       3. const
+       4. int
+       5. char
+     */
+
+      //   let fname = "Ayan";
+      // var fname = "Ayan";
+      // var lname = "khan";
+      // console.log(fname);
+      // console.log(lname);
+
+      // const id = "ayan01";
+      // console.log(id);
+
+      /*
+    Operator in JS
+    Arithmatic operator - +, -, *, /, %
+    Comparison operatoe - =, ==, ===
+    boolean - true, false
+    Logical Operator - ||, &&, !
+
+
+*/
+
+      //  Arithmatic operator - +, -, *, /, %
+
+      //  let a = 18;
+      //  let b = 5;
+
+      //  console.log(a+b) // 23
+      //  console.log(a-b) // 13
+      //  console.log(a/b) // 3.6
+      //  console.log(a%b) // 3
+
+      // Comparison operatoe - =, ==, ===, <=, >=
+
+      // let a = 5;
+      // let b = '5';
+
+      // let c = a + b;
+      // console.log("Sum of a and b = " + c)
+
+      // console.log("the value of a = " + b); // 5
+      // console.log("the value of b = " + a); // 5
+
+      // if(a === b){
+      //     console.log("This is true")
+      // }else{
+      //     console.log("This is false")
+      // }
+
+      //   _______________
+
+      //   let a = 9;
+      //   // let b = 7;
+      //   let b = 10;
+
+      //   if (a >= b) {
+      //     console.log("a is greater than b");
+      //   } else {
+      //     console.log("a is less then b");
+      //   }
+
+      // _______________
+
+      // let a = 6;
+      // let b = 8;
+
+      // if (a <= b){
+      //     console.log("a is less than b") // yes
+      // }else{
+      //     console.log("a is greater than b "); // false
+      // }
+
+      // ______ Logical Operator - || (logical or), && (logical and), !(logical not) _____________
+      // 1 means true value and 0 false
+      // True = 1
+      // False = 0
+
+      /*
+    truth table of ||(OR) Operator
+    ______________________
+       A       B     R(||)
+       0  ||   0      0
+       0  ||   1      1
+       1  ||   0      1
+       1  ||   1      1
+    ______________________
+
+    */
+
+      /*
+    console.log(true  || false ) // true
+    console.log(false || false) // false
+    console.log(true  || false) // true
+    console.log(false || true) // true
+
+    console.log(12 || 3);
+    console.log(0 || 0 || 0 || 0 || 3); // 3
+    */
+
+      /*
+    truth table of &&(AND) Operator
+    ______________________
+       A       B     R(&&)
+       0  &&   0      0 (false * false = false)
+       0  &&   1      0 (false * true = false)(454*55211*21*0 = 0)
+       1  &&   0      0 (true * false = false)(0*4554*100000 = 0 (false))
+       1  &&   1      1 (true * true  = true)
+    ______________________
+
+    */
+
+      /*
+    console.log(false && false) // false
+    console.log(false && true) // false
+    console.log(true && false) // false
+    console.log(true && true) // true
+    console.log(4 && 5 && 8 && 6 && 1 && 4 && 0) // 0 false
+    console.log(5 && 8 && 5 && 21 && 54 && 32 && 12 && 188) // true
+    */
+
+      /*
+    truth table of unary !(NOT) Operator
+       ______________________
+        A    R(!)
+       !0     1
+       !1     0
+       ______________________
+
+    */
+
+      /*
+    console.log(!false) // true
+    console.log(!true) // false
+
+    console.log(!0) // true
+    console.log(!1) // false
+
+
+    let a = 12;
+    let b = 10;
+    if(a <= b){
+      console.log('a is not equal to b');
+    }else{
+      console.log('a is equal to b');
+    }
+   */
+
+      /*
+  let a = 20;
+
+  console.log((a -= 3)); // a = a-3
+  console.log((a += 3)); // a = a+3
+  console.log((a *= 3)); // a = a*3
+  console.log((a /= 3)); // a = a/3
+  console.log((a %= 3)); // a = a%3
+
+  let c = 18;
+  let b = (c >= 18)?"True":"False"
+  console.log(b)
+  console.log(typeof c)
+  */
+
+      /*
+  const obj = {
+    name: "ayan",
+    class: "12th",
+    age: 18
+  }
+  console.log(obj)
+  */
+
+      //  console.log(obj.name)
+
+      //  function ayan(){
+      //    name='ayan khan',
+      //    age= 45;
+      //    console.log("Hello Function");
+      //  }
+      //  ayan();
+
+      //  let student = function(){
+      //   console.log("I am student")
+      //  }
+      //  student();
+
+      // let str = "125"
+      // console.log(parseInt(str))
+      // let num = 5.4;
+      // console.log(parseFloat(num));
+
+      /*
+
+    let num = parseInt("010");
+    console.log(num);
+
+
+    let bnum = parseInt("11", 2)
+    console.log(bnum)
+
+    let str = "121"
+    console.log(+str);
+
+
+    let string = 'Hello'
+    console.log(+string)
+    console.log(string - 5)
+
+    let a =   NaN;
+    console.log( a + 1)
+    console.log( isNaN(a))
+    console.log(-1/0)
+    console.log(+1/0)
+
+    let name = "Mohd Ayan";
+    let result = name.replace("Ayan", "Nadeem");
+    console.log(name)
+    console.log(result)
+
+    */
+
+      //  name = "Nadeem";
+      //  console.log(name.toUpperCase());
+      //  console.log(name.toLowerCase());
+      //  console.log(name.toCamelCase());
+
+      // console.log("Ayan".toUpperCase());
+
+      // var name = 'Papaya';
+
+      // if(name == 'Grapes'){
+      //   console.log("Puppy !!")
+      // }else if(name == 'Papaya'){
+      //   // console.log("Papaya !!")
+      //   name += "!!";
+      //   console.log(name)
+      // }else{
+      //   console.log("This is not available")
+      // }
+
+      /*__________ Control flow ________________*/
+
+      /*
+
+var name = true;
+
+console.log(typeof(name)); // boolean
+
+var a = NaN;
+var b = 321;
+console.log(typeof(a))// NaN
+console.log(isNaN(a)); // true
+console.log(isNaN(b)); // False
+*/
+
+      // If we devide any by 0 then it goes to Infinite
+      //  4/0 = Infinity
+
+      /*
+
+console.log(+1/0);// Infinite(nature)
+console.log(-1/0);// - Infinite(nature)
+
+let a = 120/0; // Infinite
+console.log(typeof(a)); // format
+console.log(isFinite(a)); // (False) Boolean
+
+let b = 51/17; // finite
+console.log(isFinite(b))// true
+*/
+
+      // var name = "AYAN";
+      // console.log(name) //
+      // // console.log(name.toUpperCase());
+      // console.log(name.toLowerCase());
+
+      // console.log("Ayan".length); // 4
+
+      //_________Controle Flow  ________
+
+      // console.log("AYAN");
+
+      // let n = 5;
+      // if (n > 10) {
+      //   console.log("Condition is True"); //
+      // } else if(n == 5){
+      //   console.log("We are equal");
+      // }else{
+      //   console.log("Condtion is false");
+      // }
+
+      // let subject = "Hindi";
+
+      // if(subject == "Math"){
+      //   console.log("Congratulation !")
+      // }else if(subject == "Science"){
+      //   console.log("You are welcome");
+      // }else{
+      //   console.log("Sorry")
+      // }
+
+      /********** Loop ************/
+      // 1
+      // 2
+      // 3
+      // 4
+      // 5
+      // 6
+      // 7
+
+      // for(Initialisation, Condition, Updation){
+      //   // Body
+      // }
+
+      // let n = 10;
+      // 0 <= 10
+      // for (let i = 0; i <= n; i++) { // 1 2 3
+      //   if (i == 5) {
+      //     continue;
+      //   }
+      //   console.log(i);
+      // }
+
+      /* 
+      const grade = "M";
+
+      switch (grade) {
+        case "A":
+          console.log("your performance is very good");
+          break;
+        case "B":
+          console.log("Your performance is fine");
+          break;
+        case "C":
+          console.log("You need to improve");
+        default:
+          console.log("You are failed");
+      }
+
+
+      
+      const obj = {
+        name: "abdul",
+        age: 52,
+        pro: "Comissoner"
+      }
+      console.log(obj);
+      obj.color = "red";
+      obj.num = 12;
+      obj['phone'] = 895521;
+
+      console.log(obj);
+
+      */
+      //  -----------------------
+
+      // function add(x, y) {
+      //   let sum = x+y;
+      //   // return sum;
+      //   console.log(`Sum of a and b ${sum}`)
+      // }
+
+      // add(1, 5);
+      // add(4,5,6);
+
+      /*=======================*/
+      // name = "saifi"
+      // console.log(`I im from ${name}`)
+
+      // a= 2
+      // b = 3
+      // b **= a
+      // console.log(b)
+      //-------------------------------
+      // console.log(Number(''))
+      // console.log(Number("  "))
+      // console.log(Number(0))
+      // console.log(Number(null))
+      // console.log(Number('0'))
+
+      // ------------------------------
+
+      // console.log(a+b) // can't access before initialisation it
+      // let a = 52;
+      // function greet() {
+      //   b = 54;
+      //   console.log(a + b);
+      //   console.log(b);
+      // }
+      // greet();
+      // console.log(b);
+
+      //--------------------------------
+
+      // console.log(a)
+      // var a = 2
+
+      // greet()
+
+      // function greet(){
+      //   // name: 'Nadeem'
+      //   // console.log(name)
+      //   console.log("kjkndn a dn amnsd manm s")
+      //   a = 45;
+      //   console.log(a)
+
+      //   var a;
+      // }
+
+      // gree()
+      // let gree = function(){
+      //   console.log("abdjas mn asm")
+
+      // }
+
+      // function student(){
+      //   this.name = 'Saif';
+      //   this.age = 45;
+      //   this.job = 'dev'
+      // }
+
+      // const newstudent = new student()
+
+      // console.log(newstudent.name)
+      // console.log(newstudent.age)
+      // console.log(newstudent.job)
+
+      // ------  slice(it return subarray from a given index) ------
+      // arr = [13, 22, 34, 44, 55, 26];
+      // console.log(arr);
+      // console.log(arr.reverse())
+      // console.log(arr.sort())
+      // console.log(arr.slice(1));
+
+      // -------- it returns a part of string -------------------------
+      // str = "Ayankhan";
+      // console.log(str.substring(2, 6));
+
+      //-------- concate two or more than two array --------------------
+      // const array1 = ["a", "b", "c"];
+      // const array2 = ["d", "e", "f"];
+      // const array3 = array1.concat(array2);
+
+      // console.log(array3);
+      // // Expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+      // --------- join strings with specific letter ----------------------
+      // const elements = ["Fire", "Air", "Water"];
+
+      // console.log(elements.join());
+      // // Expected output: "Fire,Air,Water"
+
+      // console.log(elements.join(""));
+      // // Expected output: "FireAirWater"
+
+      // console.log(elements.join("-"));
+      // // Expected output: "Fire-Air-Water"
+
+      //  ----------------------------------------------
+
+      // let arr = new Array ("eat", "sleep", 'code', 'repeate')
+      // let arr = new Array(5, 8, 2, 4, 2, 5);
+
+      // console.log(arr);
+
+      // console.log(...arr);
+      // const num = [...arr];
+      // console.log(num);
+
+      // const obj = [1='ehsd', 2='jdhsj', 3='uhuduis']
+      // console.log(obj)
+      // console.log(...obj)
+
+      // function sum(x, y, z) {
+      //   return sum;
+      // }
+      // const num1 = sum[(1, 5, 4, 2, 4)];
+
+      // console.log(num1);
+
+      // ------------------------- Switch case -----------------------------
+      // const f = "2";
+      // switch (f) {
+      //   case "1":
+      //     console.log("I am apple");
+      //     break;
+      //   case "2":
+      //     console.log("I am case 2");
+      //     break;
+      //   default:
+      //     console.log("No case match");
+      // }
+
+      // const month = "20";
+      // switch (month) {
+      //   case "31":
+      //     {
+      //       console.log("january");
+      //       console.log("january");
+      //     }
+      //     break;
+      //   case "28":
+      //     {
+      //       console.log("February");
+      //     }
+      //     break;
+      //   case "30":
+      //     {
+      //       console.log("march");
+      //     }
+      //     break;
+      //   default:
+      //     console.log("You enter wrong input");
+      // }
+
+      // function myFunction() {
+      //   alert("HELLO!");
+      // }
+
+      // ------------------------------------
+
+      // function add() {
+      //   var sum = 0;
+      //   for (var i = 0, j = arguments.length; i < j; i++) {
+      //     sum += arguments[i];
+      //   }
+      //   return sum;
+      // }
+      
+      // // add(2, 3, 4, 5) 
+      // console.log(add(2, 3, 4, 5))
+
+
+
+      // ==============================
+
+      
+    
+    </script>
+  </body>
+</html>

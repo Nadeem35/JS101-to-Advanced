@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <p style="font-size: 40px;">length of the string = <span id="len" style="font-size: 40px; color: red; font-weight: bolder;"> </span> </p>
+
+    <p id="idx"></p>
+    <!-- <button onclick="ayan()">index</button> -->
+    
+    <button onselect="ayan()">index</button>
+
+    <script>
+        var  text = "Honesty is the best policy"
+        // document.getElementById("len").innerHTML = text.length
+
+        function ayan(){
+
+            let idxof = text.indexOf("best");
+            document.getElementById("len").innerHTML = idxof;
+            
+            // document.getElementById("len").innerHTML = text.length
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
