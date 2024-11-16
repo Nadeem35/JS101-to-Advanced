@@ -154,7 +154,7 @@ public class C_Loops{
 		// }
 		
 		
-		//~~~~~~~~~~~~~~~~~ print all number of the digit in reverse UnsupportedOperationException
+		//~~~~~~~~~~~~~~~~~ print all number of the digit in reverse UnsupportedOperationException ~~~~~~~~~~~~~~~~~~~~~~~~~
 		/* 
 		int n = 26874;
 		int p = n;
@@ -361,6 +361,28 @@ public class C_Loops{
 		// }else{
 		//  System.out.println("Entered number is not Palindrom 😓");
 		// }
+
+
+
+		
+		//~~~~~~~~~~~~~~~~~ print all number of the digit in reverse UnsupportedOperationException ~~~~~~~~~~~~~~~~~~~~~~~~~
+		/* 
+		int n = 26874;
+		int p = n;
+		int sum = 0;
+
+		while(n > 0){
+		 int i = n%10;
+		 sum = sum+i;
+		 System.out.println(i);
+		 // System.out.println(sum);
+		 n = n/10;
+		}
+		
+		System.out.println(p);
+		System.out.println("Sum of all digits: " + sum);
+		// */
+		
 		
 		
 		/*********** ________ Do-while Loop ___________ ***********/ 
