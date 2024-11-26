@@ -29,7 +29,7 @@ console.log(student);
  st.greet = function(){ console.log('I am fine') };
  
  st.greet();
- // st.name();
+ st.name();
 
  //______________________________________________
 
