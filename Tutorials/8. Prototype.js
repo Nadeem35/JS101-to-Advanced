@@ -23,19 +23,19 @@ console.log('This is based on javaScript Prototype');
 // console.log(person2.gender);
 
 // //---Add method to a construter function Using Prototype---
-// function Person() {
-//          this.name = "Nadeem",
-//          this.age = 43;
-// }
-// const person1 = new Person();
-// const person2 = new Person();
+function Person() {
+         this.name = "Nadeem",
+         this.age = 43;
+}
+const person1 = new Person();
+const person2 = new Person();
 
-// Person.prototype.greet = function () {
-//     console.log('Hello' + ' ' + this.name + ' Welcome' )
-// }
+Person.prototype.greet = function () {
+    console.log('Hello' + ' ' + this.name + ' Welcome' )
+}
  
-// person1.greet();
-// person2.greet();
+person1.greet();
+person2.greet();
 
 
 
