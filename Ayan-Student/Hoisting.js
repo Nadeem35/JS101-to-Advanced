@@ -39,7 +39,8 @@
 
         /*____ let & const ____*/
         // Variable declared with let and const are Hoisted but remain in temporal dead zone "TDZ", from start until declaration is encountered
-        // Simple Bhaasa me --> let & const me varible declared ho jata but TDZ me rahta hai from start to end(jahaan aapne variable declare kiya hai) jab tak ki aap variable ko initialise na kar de.
+        // Simple Bhaasa me --> let & const me declared variable hoist ho jata hai but TDZ me rahta hai from start to end(jahaan aapne variable declare kiya hai) jab tak ki aap variable ko initialise na kar de usse pahle aap access nahi kar sakte.
+        //TDZ ka matlab yeh hai ki code ke shuru hone ke baad se lekar wahan tak jahaan aapne variable declare kiya hai, aap us variable ko use nahi kar sakte. Agar aap usse pehle access karne ki koshish karenge, toh ReferenceError milega. Yeh error isliye hota hai kyunki variable hoisted toh hai, lekin initialize nahi hua hai.
         // Access them before their declaration results is --> Uncaugt ReferenceError (Can't access before Initilisation)
 
 
