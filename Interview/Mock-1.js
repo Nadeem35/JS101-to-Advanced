@@ -1,6 +1,6 @@
 /*
 
-1.What is HTML?
+1. What is HTML?
 2. Semantic Tags in HTML
 3. four exmples of semantic tags
 4. apart from meaning to browser does semantic elements help other way?
