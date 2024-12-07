@@ -1,9 +1,9 @@
-var x = 20;
-function foo() {
-  console.log(x);
-  var x = 10;
-}
-foo(); // undefind
+// var x = 20;
+// function foo() {
+//   console.log(x);
+//   var x = 10;
+// }
+// foo(); // undefind
 
 /*--------------------------------------------------------------*/
 
@@ -25,6 +25,7 @@ foo(); // undefind
 // //// setTimeout(): Ye asynchronous function hai. Isme callback function ko Event Loop ke zariye execute hone ke liye queue mein daal diya jata hai. Bhale hi timeout 0ms hai, ye callback tabhi chalega jab synchronous code pura ho jaye.
 
 /*_________________________________________________________________________*/
+// //// what will be o/p
 
 // setTimeout(() => {
 //   console.log("TimeOut");
@@ -33,14 +34,14 @@ foo(); // undefind
 // Promise.resolve().then(() => console.log("Promise"));
 // console.log("End");
 
-// //// what will be o/p
-
-/*_________________________________________________________________________*/
+/*_______________________________ 💥 Async function always return o/p in promise__________________________________________*/
 
 // async function khan() {
 //   console.log("Hello World");
 // }
 // console.log(khan());
+
+/*____________________________ to reject or solve promise problem what should be do_____________________________________________*/
 
 // ////-- If you want to see the resolved value, you can use .then() or await:
 
@@ -56,7 +57,7 @@ foo(); // undefind
 
 // let a = [1, 2, 3]
 // let b = a;
-// console.log(a==b);
+// console.log(a==b); // O/P --> false because its compairing the reference not value
 
 /*
 In JavaScript, the equality operators (== and ===) compare objects by reference, not by value. 
@@ -175,7 +176,6 @@ A new array with elements that pass the test. If no elements pass, the method re
 
 //--- !2. Filtering Strings Based on Length
 
-
 // const words = ["apple", "bat", "cat", "elephant"];
 // const longWords = words.filter((word) => word.length > 3);
 // console.log(longWords); // ['apple', 'elephant']
@@ -195,7 +195,7 @@ A new array with elements that pass the test. If no elements pass, the method re
 // const as = ["Shah", "Shafi", "Nadeem", "Sanam", "Ayyan"]
 // const re = as.filter(as => as.length >= 3);
 
-// ---- 
+// ----
 // const as = [0, 1, 2, null, false, Boolean, true];
 // const re = as.filter(Boolean) // boolean is an function element here
 // console.log(re);
@@ -227,7 +227,6 @@ A new array with elements that pass the test. If no elements pass, the method re
 // const names = users.map(user => user.name);
 // console.log(names); // ["Alice", "Bob", "Charlie"]
 
-
 // ----
 // const words = ["hello", "world", "Sanam"];
 // const res = words.map(words => words.toUpperCase())
@@ -238,14 +237,12 @@ A new array with elements that pass the test. If no elements pass, the method re
 // const indexes = array.map((_, index) => index);
 // console.log(indexes); // [0, 1, 2]
 
-
-// ---- 
+// ----
 // const as = [0, 1, 2, null, false, Boolean, NaN, true];
 // const res = as.map(item => (typeof item === "function" ? "yes" : "Not"));
 // console.log(res); //  ['Not', 'Not', 'Not', 'Not', 'Not', 'yes', 'Not', 'Not']
 
-
-/*__________________________________________*/ 
+/*__________________________________________*/
 
 // --- Split array into string
 // const str = "hello sanam chaman"
@@ -256,3 +253,24 @@ A new array with elements that pass the test. If no elements pass, the method re
 // ----  to convert every 1st letter of the word in uppercase
 // const res = arr.map(arr => arr[0].toUpperCase()+ arr.slice(1) )
 // console.log(res);
+
+/*__________________________________________*/
+
+// // Gues the o/p (explaination in procodrr lectr)
+// for (let i = 1; i <= 3; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 5000);
+// }
+
+/*__________________________________________*/
+
+// setTimeout(() => {
+//   console.log("Timeout"); // callback Queue
+// }, 0);
+// Promise.resolve().then(() => {
+//   console.log("Inside promise"); // Macro task queue more prior then call back
+// });
+// console.log("ENd");
+
+/*__________________________________*/
