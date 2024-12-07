@@ -274,3 +274,10 @@ A new array with elements that pass the test. If no elements pass, the method re
 // console.log("ENd");
 
 /*__________________________________*/
+//-- Method to avoid promises from async function
+// async function brave() {
+//   console.log("Hello India");
+// }
+// console.log(brave()); // nutral
+// brave().then((res) => console.log(res)); // avoid promise
+
