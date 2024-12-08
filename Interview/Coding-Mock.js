@@ -22,7 +22,8 @@
 // }, 0);
 // console.log("End"); // sync
 
-// //// setTimeout(): Ye asynchronous function hai. Isme callback function ko Event Loop ke zariye execute hone ke liye queue mein daal diya jata hai. Bhale hi timeout 0ms hai, ye callback tabhi chalega jab synchronous code pura ho jaye.
+// //// setTimeout(): Ye asynchronous function hai. Isme callback function ko Event Loop ke zariye execute hone ke liye queue mein daal diya jata hai. 
+//// Bhale hi timeout 0ms hai, ye callback tabhi chalega jab synchronous code pura ho jaye.
 
 /*_________________________________________________________________________*/
 // //// what will be o/p
