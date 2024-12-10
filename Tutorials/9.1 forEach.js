@@ -11,7 +11,7 @@ console.log('JavaScript for-Each Articles');
 //  console.log(item);
 // }
 
-
+//------------------------------------
 
 // // Updating the array element
 // let students = ['Arif', 'Saqib', 'Talib']
@@ -31,6 +31,7 @@ students.forEach(elements =>{
  console.log(elements)
 });
 
+//------------------------------------
 
 // for loop to forEach()
 const arrayItems = ['item1', 'item2', 'item3'];
@@ -58,6 +59,7 @@ function myFunction(item){
  console.log(item)
 }
 
+//------------------------------------
 
 // forEach with Maps
 let map = new Map();
