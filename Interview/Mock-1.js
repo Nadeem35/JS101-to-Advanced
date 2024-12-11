@@ -7,7 +7,7 @@
 5. what are tags & attributes?
 6. difference between div and span?
 7. examples of inline elements.
-8. apart from width difference is there sny other differnce?
+8. apart from width difference is there any other differnce?
 9. can we give height & width in inline elements?
 10. diff between canvas and nsvg
 11. full form of css
