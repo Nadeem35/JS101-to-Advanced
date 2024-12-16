@@ -1,4 +1,4 @@
-console.log("In this tutorial you will learn about JavaScript...of Loop");
+// console.log("In this tutorial you will learn about JavaScript...of Loop");
 
 const students = ['Nadeem', 'Uzair', 'Amir'];
 // using for...of
