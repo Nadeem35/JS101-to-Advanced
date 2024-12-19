@@ -82,7 +82,7 @@ x[1].pop(); // remove from inner
 x.splice(1,1);
 
 
-// --- Iterate over Multidimentional Array ---
+// ------- Iterate over Multidimentional Array ------
 let pillar = [ ['Namaz', 5], ['Roza', 30], ['Huz', 1]]
 pillar.forEach((pillar) => {
  pillar.forEach((data) => {
