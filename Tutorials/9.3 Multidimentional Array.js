@@ -66,11 +66,11 @@ x.push(['saba', 56]);
 x[5][1] = 'Welcome';
 // console.log(x)
 
-// Using push()
+// --- Using push() ---
 x[3].push('Good');
 console.log(x)
 
-// Using splice()
+// --- Using splice() ---
 x.splice(1, 0, ['Salahuddin', 313]);
 console.log(x)
 
