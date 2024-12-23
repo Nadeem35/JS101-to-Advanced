@@ -31,6 +31,28 @@
     </script>
 
 
+    //---------------------------------------
+        <script>
+
+        function Name() {
+            let a = parseInt(prompt("Enter a"))
+            let b = parseInt(prompt("Enter b"))
+            if(!isNaN(a) && !isNaN(b)){
+                let sum = a + b;
+                document.getElementById("adi").innerHTML = `sum of ${a}+${b} = ${sum}`
+            }else{
+                document.getElementById("adi").innerHTML = `please enter valid input`
+            }
+
+        }
+
+    </script>
+
+    <h1 id="adi">Output </h1>
+    <button onclick="Name()">Click</button>
+
+
+
     
 </body>
 </html>
