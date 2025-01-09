@@ -44,4 +44,11 @@ counter(); // Output: Current count: 3
 . Yeh asynchronous tasks (jaise event listeners, API calls) aur private data ko secure karne ke liye kaam aata hai.
 . Closure real-world applications me bahut useful hota hai!
   
-
+// Exam - 2
+function multiply(a) {
+    return function (b) {
+        return a * b;
+    };
+}
+const double = multiply(2);
+console.log(double(5)); // Output: 10
