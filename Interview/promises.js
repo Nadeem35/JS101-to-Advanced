@@ -2,10 +2,11 @@
 JavaScript mein Promise ek object hai jo asynchronous operations ko handle karne ke liye use hota hai. 
 Simple shabdon mein, agar koi kaam future mein complete hoga (jaise API call, file read, etc.), toh uske result ko handle karne ke liye Promise ka use hota hai.
 
-// === Promise Ka Basic Concept
+// === Promise Ka Basic Concept 
 Ek Promise future mein ek value return karega:
 Success (Resolved): Jab kaam successfully ho jaye.
 Failure (Rejected): Jab kaam fail ho jaye (error aaye).
+  
 
 // === States of a Promise ===
 1. Pending: Jab promise abhi bhi process mein hai, aur result available nahi hai.
