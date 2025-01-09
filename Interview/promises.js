@@ -1,6 +1,7 @@
 // --- What is promises ---
 JavaScript mein Promise ek object hai jo asynchronous operations ko handle karne ke liye use hota hai. 
-Simple shabdon mein, agar koi kaam future mein complete hoga (jaise API call, file read, etc.), toh uske result ko handle karne ke liye Promise ka use hota hai.
+Mainly promise is use to handle output of the asynchronous operation in future.
+Yeh asynchronous tasks ka result future me provide karta hai (jaise file read or API call ka response ya kisi asynchronous operation ka output).
 
 // === Promise Ka Basic Concept 
 Ek Promise future mein ek value return karega:
