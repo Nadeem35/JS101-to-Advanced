@@ -29,7 +29,15 @@ console.log("Task 3");
 2. Asynchronous Programming
 Definition: Asynchronous programming ka matlab hai ki multiple tasks ek time pe parallelly execute ho sakte hain. Jab ek task chal raha hota hai, tab dusre tasks wait nahi karte, 
 wo apne respective time pe execute ho jaate hain.
+
+Asynchronous (Event Loop ke through): Jab hume time-consuming kam karna hota hai (jaise file read, API call, ya timer), toh JavaScript inhe asynchronously handle karta hai bina baaki code ko block kiye. 
+Yeh "Event Loop" aur "Callback Queue" ka use karke hota hai. 
+
 Flow: Code ko execute karte waqt kuch tasks background mein run karte hain, aur jab wo complete hote hain, tab apne callback function ya promise ke through result return karte hain.
+Role of the event loop: JavaScript asynchronous tasks ko background me execute karta hai aur jab wo ready hote hain, tab unhe "Callback Queue" se le kar "Call Stack" me daal kar run karta hai.
+Yeh asynchronous tasks ko synchronous execution ke saath seamlessly combine karne ka tarika hai.
+The Callback Queue and the Call Stack are two key components of JavaScript's runtime environment that help it manage synchronous and asynchronous tasks efficiently.
+
 Advantages: Asynchronous code ki wajah se aapki application ka performance better hota hai, kyunki time-consuming tasks ko background mein process kiya jaata hai, aur user ko wait nahi karna padta.
 
 */
