@@ -24,7 +24,11 @@ Callback Hell ka Solution: Asynchronous operations ko handle karna easier banata
 Readable Code: Promises ka code clean aur readable hota hai.
 Chaining: Ek promise ke baad dusra kaam karna possible hota hai (using .then()).
 
-
+// --- States of a Promise --- 
+Ek promise ke 3 states hote hain:
+1. Pending: Jab tak asynchronous operation complete nahi hota (initial state).
+2. Resolved (Fulfilled): Jab operation successfully complete ho jata hai.
+3. Rejected: Jab operation fail ho jata hai.
   
 
 // const promise = new Promise((resolve, reject) => {
@@ -45,6 +49,11 @@ const fetchData = new Promise((resolve, reject) => {
   }
 });
 
+// --- Methods to Handling Promises ---
+Promises ko handle karne ke liye:
+1. .then() method: Jab promise resolve hota hai.
+2. .catch() method: Jab promise reject hota hai.
+3. .finally() method: Jab promise resolve ya reject kisi bhi state me aata hai.
 
 
 fetchData
