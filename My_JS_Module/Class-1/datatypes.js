@@ -10,6 +10,8 @@
 //   key: "value",
 // };
 
+//-------------------------
+
 // Mutable values are those which can be modified after creation
 // Immutable values are those which can not be modified after creation
 
@@ -20,6 +22,8 @@
 
 // console.log(typeof bool);
 // console.log(typeof obj);
+
+// -------------------
 
 let str = "neeraj"; // immutable
 
