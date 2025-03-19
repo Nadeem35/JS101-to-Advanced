@@ -13,6 +13,8 @@
 
 // console.log(a, b, c, d);
 
+// --------------------
+
 // spread operator(...) -> It unpacks into individual elements
 
 // const arr = [1, 2, 3];
@@ -22,6 +24,8 @@
 
 // const first = [1, 2];
 // const second = [3, 4];
+
+// ----------------------
 
 // const third = [...first, ...second];
 
@@ -34,6 +38,8 @@
 // }
 
 // console.log(sum(...arr));
+
+// ----------------------
 
 // rest operator(...) -> It collects all the remaining elements into an array
 
